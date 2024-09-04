@@ -9,16 +9,16 @@ public class Pilha {
 		
 	}
 	
-	public boolean isEmpty() { // OPERAÇÃO SE A PILHA FOR VAZIA
+	public boolean isEmpty() {
 		if (topo == null) {
 			return true;
 		}
 		return false;
 	}
 	
-	public void push(int valor) { //OPERAÇÃO: PREENCHER VALOR DA PILHA
+	public void push(int valor) { 
 		No elemento = new No();
-		elemento.dado = valor; // PASSANDO UM VALOR PELO NO
+		elemento.dado = valor; 
 		elemento.proximo = topo;
 		topo = elemento;
 		tamanho ++;
